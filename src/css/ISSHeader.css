@@ -1,0 +1,45 @@
+.ISSHeaderContainer {
+  background-color: #47545d;
+  display: flex;
+  height: 50px;
+}
+
+.ISSHeaderLogo {
+  width: 250px;
+}
+
+.ISSHeaderLogo > img {
+  height: 40px;
+  padding: 5px 20px;
+}
+
+.ISSHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.ISSHeaderText {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.ISSHeaderIcon {
+  display: flex;
+  align-items: center;
+}
+
+.svgIconContainer {
+  height: 50%;
+  padding: 10px;
+}
+
+.svgIconContainer svg {
+  height: 100%;
+  cursor: pointer;
+}
+
+.hamburgerMenuIcon {
+  padding-left: 0px;
+}

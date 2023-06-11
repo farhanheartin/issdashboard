@@ -1,0 +1,32 @@
+.ISSSideMenuContainer {
+  width: 100%;
+  padding: 10px;
+}
+
+.ISSSideMenuHeaderLabel {
+  color: #47545d !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.ISSSideMenuHeaderLabel:first-of-type {
+  margin-top: 0px;
+}
+
+.ISSSideSubMenuHeaderLabel {
+  color: #8e999d !important;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.ISSMenuClick {
+  cursor: pointer;
+}
+
+.ISSSideMenuHeaderLabel:last-of-type,
+.ISSSideSubMenuHeaderLabel:last-of-type {
+  padding-bottom: 0px;
+}

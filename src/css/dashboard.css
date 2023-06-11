@@ -1,0 +1,173 @@
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0;
+}
+
+.dynamic {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.dynamic >
+  
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+/* Style the counter cards */
+.card-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  flex: 1;
+  display: flex;
+  width: 0;
+  text-align: left;
+  align-items: center;
+  margin: 20px;
+  border-radius: 7px;
+}
+
+.card-container:first-of-type {
+  margin-left: 0px;
+}
+.card-container:last-of-type {
+  margin-right: 0px;
+}
+
+.shipMentInfoContentContainer {
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  flex: 1;
+  width: 350px;
+  height: 150px;
+  margin: 20px 0;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.shipMentInfoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shipMentInfoValue {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.shipMentInfoIcon {
+  display: flex;
+  align-items: center;
+  width: 30px;
+}
+.shipMentInfoIcon,
+.icshipMentInfoIconon svg {
+  width: 100px;
+}
+
+.shipMentInfoName {
+  font-size: 22px;
+  font-weight: 700;
+}
+.shipMentInfoDate {
+  font-size: 14px;
+  font-weight: 300;
+}
+.contentMainDiv {
+  display: flex;
+}
+
+/* Column Style */
+.column {
+  float: left;
+  width: 25%;
+  margin: 0 15px;
+}
+.content {
+  flex-direction: column-reverse;
+  margin-left: 240px;
+  width: max-content;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* chart start */
+.chart-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f1f1f1;
+  flex: 1;
+}
+
+.servicesChart {
+  margin: 20px;
+  padding: 16px;
+}
+
+.tradeLaneChart {
+  margin: 20px 0;
+}
+
+.icon,
+.icon svg {
+  width: 40px;
+  height: 55px;
+}
+.profitinfo {
+  margin-left: 10px;
+}
+.profitValue {
+  color: #47545d !important;
+  font-size: 26px;
+  font-weight: 700;
+}
+.profitType {
+  color: #47545d !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+.profitInfoIconDiv {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.profitInfoIconDiv svg {
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+.servicesChartHeader,
+.tradeLaneChartHeader {
+  color: #47545d !important;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.servicesChart .apexcharts-legend-series {
+  margin: 5px 40px !important;
+}
+
+.tradeLaneChart {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
