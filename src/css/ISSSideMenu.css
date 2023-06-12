@@ -9,6 +9,7 @@
   font-weight: 700;
   padding: 10px 0;
   margin-top: 15px;
+  position: relative;
 }
 
 .ISSSideMenuHeaderLabel:first-of-type {
@@ -20,6 +21,7 @@
   font-size: 14px;
   font-weight: 400;
   padding: 10px 0;
+  position: relative;
 }
 
 .ISSMenuClick {
@@ -29,4 +31,16 @@
 .ISSSideMenuHeaderLabel:last-of-type,
 .ISSSideSubMenuHeaderLabel:last-of-type {
   padding-bottom: 0px;
+}
+
+.ISSSideMenuHeaderLabel.active::after,
+.ISSSideSubMenuHeaderLabel.active::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff5000;
+  position: absolute;
+  right: 23px;
 }

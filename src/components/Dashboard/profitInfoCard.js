@@ -7,11 +7,14 @@ function ProfitInfoCard() {
   return (
     <div className="">
       <h2>Dashboard</h2>
-      <div class="row dynamic">
+      <div className="row dynamic">
         {profitInfoData.map((items, idx) => {
           const Icon = items.icon;
           return (
-            <div key={`profitInfoCard_${idx}`} class="column card-container">
+            <div
+              key={`profitInfoCard_${idx}`}
+              className="column card-container"
+            >
               <div
                 className="profitInfoIconDiv"
                 style={{ backgroundColor: items.bgColor }}

@@ -19,12 +19,12 @@ const Dashboard = () => {
     stroke: { width: 0 },
     plotOptions: {
       pie: {
-        customScale: 0.7,
+        customScale: 0.8,
         donut: {
-          size: "75%",
+          size: "85%",
         },
         dataLabels: {
-          offset: -50,
+          offset: -40,
         },
       },
     },
